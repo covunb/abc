@@ -4,7 +4,7 @@
         <title>Covington Unblocked</title>
         <style>
             body {
-                background: linear-gradient(270deg, #0032ff, #ddbb00);
+                background: linear-gradient(270deg, #0002ff, #ddbb00);
                 background-size: 600% 600%;
                 animation: 7s ease infinite;
                 padding: 10px;
@@ -21,7 +21,7 @@
     
             /* navigation menu */
             nav {
-                background: rgb(0, 4, 255);
+                background: #0002ff;
                 margin: 0 auto;
                 margin-bottom: 20px;
                 display: flex;
@@ -48,7 +48,7 @@
             }
             /* main container area beneath menu */
             main {
-                background: rgb(0, 4, 255);
+                background: #0002ff;
                 display: flex;
                 border-radius: 20px;
             }
@@ -63,18 +63,28 @@
             }
             
             #portfolio li {
-                background: #ddbb00;
+                background: #cfb000;
                 padding: 10px;
                 border-radius: 10px;
                 margin-bottom: 10px;
             }
             
-            #portfolio li:hover {
-                background: #cfb000;
+            button li:hover { 
+                background: #ad9403;
+            } 
+            button {
+                background: transparent;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+            
+            #portfolio li:hover { 
+                background: #ad9403;
             } 
             
             #portfolio a {
-                text-decoration: none;
+                text-decoration:none;
                 color:black;
             }
         </style>
@@ -85,30 +95,17 @@
         <nav>
             <header>CHS Unblocked</header>
             <ul>
-                <li><a href="/CHSU/index.html">Home</a></li>
-                <li><a href="/CHSU/games.html">Games</a></li>
-                <li><a href="/CHSU/contact.html">Contact</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/games.html">Games</a></li>
+                <li><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
         <main>
             <div class="content">
                 <h1>Games</h1>
                 <ul id="portfolio">
-                    <li>
-                        <a href="games/sportsheads.html">Sports Heads Football</a>
-                    </li>
-                    <li>
-                        <a href="games/mario64.html">Super Mario 64</a>
-                    </li>
-                    <li>
-                        <a href="games/baldisbasics.html">Baldis Basics</a>
-                    </li>
-                    <li>
-                        <a href="games/motocross.html">BMX Pool Party</a>
-                    </li>
-                    <li>
-                        <a href="games/placeholder.html">placeholder desc</a>
-                    </li>
+                    <li onclick="setupGameInfo()"><a href="template.html">Getting Over It Scratch</a></li>
+                    
                 </ul>
             </div>
         </main>

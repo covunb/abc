@@ -1,14 +1,29 @@
+<!--
+Error codes
+1/unknown location
+2/
+3/
+4/
+5/
+6/
+7/
+8/
+9/
+-->
 <!DOCTYPE html>
 <html>
     <head>
         <title>Covington Unblocked</title>
-        <style>
-            body {
-                background: linear-gradient(270deg, #0032ff, #ddbb00);
-                background-size: 600% 600%;
-                animation: 7s ease infinite;
-                padding: 10px;
-                font-family: arial;
+        <style text=css>
+            .bg {
+                background: linear-gradient(270deg, #2e2c8a, #23217b); /*#8d9022, #b5b921*/
+                background-size: 800% 800%;
+                animation: chsScroll 6s ease infinite;
+            }
+            @keyframes chsScroll {
+                0%{background-position:0% 50%};
+                50%{background-position:100% 50%};
+                100%{background-position:0% 50%};
             }
             header {
                 font-size: 1.5em;
@@ -21,7 +36,7 @@
     
             /* navigation menu */
             nav {
-                background: rgb(0, 4, 255);
+                background: color #FFD900;
                 margin: 0 auto;
                 margin-bottom: 20px;
                 display: flex;
@@ -49,7 +64,7 @@
     
             /* main container area beneath menu */
             main {
-                background: rgb(0, 4, 255);
+                background: color #FFD900;
                 display: flex;
                 border-radius: 20px;
             }
@@ -67,28 +82,40 @@
             .info header {
                 font-size: 1.25em;
             }
+            .misc header {
+                color:#0004FF
+            }
+            button li:hover {
+                color:#FFD900
+            }
         </style>
     </head>
     <body>
         <div id="all-contents"> 
+            <!--scripting for finding info about the game, testing this feature as a way to simplify adding new games-->
+            <script>
+                /*Put any script here*/
+           </script>
+                        <!--this is the header, do NOT delete this-->
             <nav>
                 <header>CHS Unblocked</header>
-                 <ul>
-                    <li><a href="/CHSU/index.html">Home</a></li>
-                    <li><a href="/CHSU/games.html">Games</a></li>
-                    <li><a href="/CHSU/contact.html">Contact</a></li>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/games.html">Games</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
                 </ul>
             </nav>
             <main>
                 <div class="content">
-                   <center><h2>Welcome to CHS Unblocked</h2> 
-                      <section class="info">
-                          <p> </p>
-                        <header>How to use and support this website</center>
+                   <!--Title of game-->
+                    <center><h2><!--Title-->></h2></center>
+                      <section>            
+                       <center><p><!--Source--></p></center>
+                        <header>
+                            <center><h2>How To Play</h2></center>
+                        <!--put any tips here-->
                             <ul>
-                                <li>Click Games to find all games currently hosted</li>
-                                <li>Spread the word</li>
-                                <li>Suggest games</li>
+                                <li><p><!--Tips and controls-->></p></li>
                             </ul>
                         </header>
                     </section>
@@ -97,3 +124,4 @@
         </div>
     </body>
 </html>   
+ 
