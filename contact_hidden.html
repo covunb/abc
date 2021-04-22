@@ -1,29 +1,14 @@
-<!--
-Error codes
-1/unknown location
-2/
-3/
-4/
-5/
-6/
-7/
-8/
-9/
--->
 <!DOCTYPE html>
 <html>
     <head>
         <title>Covington Unblocked</title>
-        <style text=css>
-            .bg {
-                background: linear-gradient(270deg, #2e2c8a, #23217b); /*#8d9022, #b5b921*/
-                background-size: 800% 800%;
-                animation: chsScroll 6s ease infinite;
-            }
-            @keyframes chsScroll {
-                0%{background-position:0% 50%};
-                50%{background-position:100% 50%};
-                100%{background-position:0% 50%};
+        <style>
+            body {
+                background: linear-gradient(270deg, #0032ff, #ddbb00);
+                background-size: 600% 600%;
+                animation: 7s ease infinite;
+                padding: 10px;
+                font-family: arial;
             }
             header {
                 font-size: 1.5em;
@@ -36,7 +21,7 @@ Error codes
     
             /* navigation menu */
             nav {
-                background: color #FFD900;
+                background: rgb(0, 4, 255);
                 margin: 0 auto;
                 margin-bottom: 20px;
                 display: flex;
@@ -61,10 +46,9 @@ Error codes
                 color: black;
                 flex: 1;
             }
-    
             /* main container area beneath menu */
             main {
-                background: color #FFD900;
+                background: rgb(0, 4, 255);
                 display: flex;
                 border-radius: 20px;
             }
@@ -79,29 +63,17 @@ Error codes
                 flex: 1;
                 padding: 10px;
             }
-            .info {
+            .info header {
                 font-size: 1.25em;
-            }
-            .misc header {
-                color:#0004FF
-            }
-            button li:hover {
-                color:#FFD900
-            }
-            .he ul li {
-                padding: 10px;
-                background-color: #FFD900;
-
             }
         </style>
     </head>
-    <body class="bg">
+    <body>
         <div id="all-contents"> 
-            <!--scripting for finding info about the game, testing this feature as a way to simplify adding new games-->
-                        <!--this is the header, do NOT delete this-->
             <nav>
                 <header>CHS Unblocked</header>
-                <ul>
+                <!--Keep this, it lets the user go back and forth between pages if on an error screen or another tab-->
+                 <ul>
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/games.html">Games</a></li>
                     <li><a href="/contact.html">Contact</a></li>
@@ -109,21 +81,18 @@ Error codes
             </nav>
             <main>
                 <div class="content">
-                   <!--Title of game-->
-                    <center><h1>Title</h1></center>
-                      <section>            
-                       <center><p><!--Source--></p></center>
+                   <center>
+                       <h2>Welcome to CHS Unblocked</h2> 
+                      <section class="info">
+                          <p> </p>
                         <header>
-                            <center><h4>How To Play</h4></center>
-                        <!--put any tips here-->
-                            <ul>
-                                <li><p>Tips and Controls</p></li>
-                            </ul>
-                        </header>
+                            <div>
+                                <a>Hey there, im guessing if you are reading this then you have either a suggestion or hate for me, tough luck though, i dont care.</a>
+                            </div>
+                            </header></center>
                     </section>
                 </div>
             </main>
         </div>
     </body>
 </html>   
- 
