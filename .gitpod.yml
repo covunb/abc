@@ -1,3 +1,6 @@
+image:
+  file: .gitpod.Dockerfile
+
 vscode:
   extensions:
     - ritwickdey.liveserver@5.6.1:e4c865d51815543708ca6d7adf1f2bfb
