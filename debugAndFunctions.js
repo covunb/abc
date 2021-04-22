@@ -1,5 +1,5 @@
-/*var idNum = 0
-            var pageType = pageType  DONT FORGET TO UNCOMMENT THIS AND ADD THE PAGE TYPE
+var idNum = 0
+            var pageType = pageType  /*DONT FORGET TO UNCOMMENT THIS AND ADD THE PAGE TYPE*/
             function addInfo (idNum, name, desc, source, type) {
                 idNum = nameList[idNum] = name; descList[idNum] = desc; sourceList [idNum] = source; pageType [idNum] = type;
             }
@@ -14,5 +14,5 @@
            function getInfo (requestedInfo, idNum) {
                 return pageInfo.requestedInfo[idNum - 1];
            }
-           */
+        
         
