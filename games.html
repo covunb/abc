@@ -92,13 +92,43 @@
 
     <body>
         <script>
+            function changeEntry(idNum, entry, entryList) {
+                if (entryList.contains(entry) === true) {
+                    entryList [idNum] = prompt("Type new entry(format correctly please)");
+                }
+                else {
+                    alert("sorry, thats not gonna happen, index " + idNum + " of " + entryList + " is taken");
+                }    
+            };
+            function addNewEntry(entry, entryList) {
+                if (entryList.contains(entry) === false) {
+                    entryList [entryList.length] = entry;
+                }
+                else {
+                    alert("sorry, thats not gonna happen, index " + idNum + " of " + entryList + " is taken");
+                }
+            }
             function addInfoArray (idNum, name, desc, source, type) {
-                idNum = nameList[idNum] = name; descList[idNum] = desc; sourceList [idNum] = source; pageType [idNum] = type;
-            }
+                addEntry(idNum, idNumList);
+                addEntry(name, nameList);
+                addEntry(desc, descList);
+                addEntry(source, sourceList);
+                addEntry(type, typeList);
+
+            };
             function getInfoArray (idNum) {
-                var gameName = nameList[idNum]; var gameDesc = DescList[idNum]; var gameSource = sourceList[idNum]; var pageType = typeList[idNum];
-                return(gameName, gameDesc, gameSource, pageType);
+                name = getInfo(idnum, name);
+                desc = getInfo(idnum, desc);
+                source = getInfo(idnum, source);
+                type = getInfo(idnum, type);
+
             }
+            function getInfo (idNum, list) {
+                return (list [idNum])
+            };
+            /*function addInfoPrompt (idNum, name, desc, source, type) {
+                var name = prompt("name"); var desc = prompt("description"); var source = prompt("iframe link"); var type = prompt("page type?");
+            };*/
         </script>
       <div id="all-contents">
         <nav>
@@ -113,8 +143,9 @@
             <div class="content">
                 <h1>Games</h1>
                 <ul id="portfolio">
-                    <li onclick="setupGameInfo()"><a href="template.html">Getting Over It Scratch</a></li>
-                    <li onclick="setupGameInfo()"><a href="template.html">Getting Over It Scratch</a></li>                        
+                    <li onclick="addInfoArray()"><a href="template.html">Getting Over It Scratch</a></li>
+                    <li onclick="addInfoArray()"><a href="template.html">Getting Over It Scratch</a></li>
+                    <li onclick="addInfoArray()"><a href="template.html">Add game(testing)</a></li>                        
                 </ul>
             </div>
         </main>

@@ -98,7 +98,13 @@ Error codes
     <body class="bg">
         <div id="all-contents"> 
             <!--scripting for finding info about the game, testing this feature as a way to simplify adding new games-->
-                        <!--this is the header, do NOT delete this-->
+                     <script>
+                        function getInfoArray (info) {
+                            var info = info[idNum];
+                            return(info);
+                        }
+                     </script>   
+            <!--this is the header, do NOT delete this-->
             <nav>
                 <header>CHS Unblocked</header>
                 <ul>
@@ -110,9 +116,9 @@ Error codes
             <main>
                 <div class="content">
                    <!--Title of game-->
-                    <center><h1>Title</h1></center>
+                    <center><h1><script>getInfoArray(title)</script></h1></center>
                       <section>            
-                       <center><p><!--Source--></p></center>
+                       <center><p><script>getInfoArray(source)</script></p></center>
                         <header>
                             <center><h4>How To Play</h4></center>
                         <!--put any tips here-->
