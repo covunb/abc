@@ -9,9 +9,26 @@
     <body class="bg">
         <script>
             function secretStuff() {
-                alert("good job dude, ya found my secret stash, enjoy it while it lasts");
-            window.location.href="hidden_index.html";
-            };
+                var passwordAnswer = prompt("What's the password?");
+                if (passwordAnswer === "please"){
+                    alert ("nope, thats the magic word, but not a password, try again");
+                }
+                else if (passwordAnswer === "Jace Robin") {
+                    alert ("Hey there, how ya doin :)");
+                }
+                else if (passwordAnswer === "CHS") {
+                    alert ("Good job... just kidding, that'd be too easy!");
+                }
+                else if (passwordAnswer === "Louisiana") {
+                    alert ("You are here");
+                } 
+                else if (passwordAnswer === "underground") {
+                    alert ("Huh? Whats that? .... welcome");
+                }
+                else {
+                    alert("Not an accepted password!");
+                }
+            }
             function redirect(location) {
                 window.location.href=location.html;
             };
