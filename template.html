@@ -93,37 +93,51 @@ Error codes
                 background-color: #FFD900;
 
             }
+            #varsource {
+                color: black;
+            }  
         </style>
     </head>
-    <body class="bg">
+    <body class="bg" onload="loadScene(idNum)">
         <div id="all-contents"> 
             <!--scripting for finding info about the game, testing this feature as a way to simplify adding new games-->
                      <script>
-                        function getInfoArray (info) {
-                            var info = info[idNum];
-                            return(info);
-                        }
+                        /*var idNum = idNum;
+                        var source = getInfo(sourceList);
+                        var name = getInfo(nameList);
+                        var desc = getInfo(descList);
+                        var source = "/games/gettingoveritscratch.html"
+                        function getInfo(info) {
+                                return(info[idNum]);
+                        };
+                        function loadScene (idNum) {
+                            if (idNum !== 99) {
+                                document.getElementById("varsource").src = getInfo(0);
+                            }
+                            name = getInfo(nameList);
+                            desc = getInfo (descList);
+                        }*/
                      </script>   
             <!--this is the header, do NOT delete this-->
             <nav>
                 <header>CHS Unblocked</header>
                 <ul>
-                    <li><a href="/CHSU/index.html">Home</a></li>
-                    <li><a href="/CHSU/games.html">Games</a></li>
-                    <li><a href="/CHSU/contact.html">Contact</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/games.html">Games</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
                 </ul>
             </nav>
             <main>
                 <div class="content">
                    <!--Title of game-->
-                    <center><h1><script>getInfoArray(title)</script></h1></center>
-                      <section>            
-                       <center><p><script>getInfoArray(source)</script></p></center>
+                    <center><h1><!--Title--></h1></center>
+                      <section>           
+                       <center><p><!--iframe embed--></p></center>
                         <header>
-                            <center><h4>How To Play</h4></center>
+                            <center><h4>About</h4></center>
                         <!--put any tips here-->
                             <ul>
-                                <li><p>Tips and Controls</p></li>
+                                <li><p><!--Info--></p></li>
                             </ul>
                         </header>
                     </section>

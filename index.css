@@ -1,0 +1,93 @@
+            .bg {
+                background: linear-gradient(180deg, #23217b,#000000); /*#8d9022, #b5b921*/
+                background-size: 600% 600%;
+            };
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background-color: #FFD900;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+                border-radius: 20px; 
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: black;
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: black;
+                flex: 1;
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background-color: #FFD900;
+                display: flex;
+                border-radius: 20px;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 200px;
+            }
+            .content {
+                flex: 1;
+                padding: 10px;
+            }
+            .info header {
+                font-size: 1.25em;
+            }
+            button li:hover { 
+                background: #ad9403;
+            } 
+            button {
+                background: transparent;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+            #portfolio {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            
+            #portfolio li {
+                background: #cfb000;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+            
+            #portfolio li:hover { 
+                background: #ad9403;
+            } 
+            
+            #portfolio a {
+                text-decoration:none;
+                color:black;
+            }
+            #news li {
+                
+            }

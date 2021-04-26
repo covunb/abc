@@ -1,26 +1,17 @@
-<!--
-Error codes
-1/unknown location
-2/
-3/
-4/
-5/
-6/
-7/
-8/
-9/
--->
 <!DOCTYPE html>
 <html>
     <head>
         <title>Covington Unblocked</title>
-        <style>
-            body {
-                background: linear-gradient(270deg, color #FFD900, color #0004FF);
-                background-size: 600% 600%;
-                animation: 7s ease infinite;
-                padding: 10px;
-                font-family: arial;
+        <style text=css>
+            .bg {
+                background: linear-gradient(270deg, #2e2c8a, #23217b); /*#8d9022, #b5b921*/
+                background-size: 800% 800%;
+                animation: chsScroll 6s ease infinite;
+            }
+            @keyframes chsScroll {
+                0%{background-position:0% 50%};
+                50%{background-position:100% 50%};
+                100%{background-position:0% 50%};
             }
             header {
                 font-size: 1.5em;
@@ -76,39 +67,23 @@ Error codes
                 flex: 1;
                 padding: 10px;
             }
-            .info header {
+            .info {
                 font-size: 1.25em;
+            }
+            .misc header {
+                color:#0004FF
+            }
+            button li:hover {
+                color:#FFD900
+            }
+            .he ul li {
+                padding: 10px;
+                background-color: #FFD900;
+
+            }
+            .template iframe {
+                width: 480;
+                height: 3509;
             }
         </style>
     </head>
-    <body>
-        <div id="all-contents"> 
-                        <!--this is the header, do NOT delete this-->
-            <nav>
-                <header>CHS Unblocked</header>
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/games.html">Games</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <main>
-                <div class="content">
-                   <!--Title of game-->
-                    <center><h2><script>/* Title */</script></h2></center>
-                      <section>            
-                       <center><script>/* Source */</script></center>
-                        <header>
-                            <center><h2>How To Play</h2></center>
-                        <!--put any tips here-->
-                            <ul>
-                                <li><p><script>/* Description */</script><p></li>
-                            </ul>
-                        </header>
-                    </section>
-                </div>
-            </main>
-        </div>
-    </body>
-</html>   
- 

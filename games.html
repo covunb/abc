@@ -2,150 +2,91 @@
 <html>
     <head>
         <title>Covington Unblocked</title>
-        <style>
-            body {
-                background: linear-gradient(270deg, #0002ff, #ddbb00);
-                background-size: 600% 600%;
-                animation: 7s ease infinite;
-                padding: 10px;
-                font-family: arial;
-            }
-            header {
-                font-size: 1.5em;
-                font-weight: bold;
-            }
-            #all-contents {
-                max-width: 800px;
-                margin: auto;
-            }
-    
-            /* navigation menu */
-            nav {
-                background: #0002ff;
-                margin: 0 auto;
-                margin-bottom: 20px;
-                display: flex;
-                padding: 10px;
-                border-radius: 20px; 
-            }
-            nav header {
-                display: flex;
-                align-items: center;
-                color: black;
-                flex: 1;
-            }
-            nav ul {
-                list-style-image: none;
-            }
-            nav li {
-                display: inline-block;
-                padding: 0 10px;
-            }
-            nav a {
-                text-decoration: none;
-                color: black;
-                flex: 1;
-            }
-            /* main container area beneath menu */
-            main {
-                background: #0002ff;
-                display: flex;
-                border-radius: 20px;
-            }
-            .content {
-                flex: 1;
-                padding: 10px;
-            }
-             /* portfolio styles */
-            #portfolio {
-                list-style-type: none;
-                padding-left: 0;
-            }
-            
-            #portfolio li {
-                background: #cfb000;
-                padding: 10px;
-                border-radius: 10px;
-                margin-bottom: 10px;
-            }
-            
-            button li:hover { 
-                background: #ad9403;
-            } 
-            button {
-                background: transparent;
-                padding: 10px;
-                border-radius: 10px;
-                margin-bottom: 10px;
-            }
-            
-            #portfolio li:hover { 
-                background: #ad9403;
-            } 
-            
-            #portfolio a {
-                text-decoration:none;
-                color:black;
-            }
-        </style>
+            <style>
+                @import "index.css"
+            </style>
     </head>
 
-    <body>
+    <body class="bg">
         <script>
+            /*var idNum = 99
+            var name
+            var desc
+            var source
+            
+
             function changeEntry(idNum, entry, entryList) {
                 if (entryList.contains(entry) === true) {
-                    entryList [idNum] = prompt("Type new entry(format correctly please)");
+                    entryList [idNum] = prompt("Type new entry(format: 'entry')");
                 }
                 else {
                     alert("sorry, thats not gonna happen, index " + idNum + " of " + entryList + " is taken");
-                }    
+                };
             };
             function addNewEntry(entry, entryList) {
                 if (entryList.contains(entry) === false) {
-                    entryList [entryList.length] = entry;
+                    entryList[entryList.length] = (entry);
                 }
                 else {
                     alert("sorry, thats not gonna happen, index " + idNum + " of " + entryList + " is taken");
-                }
-            }
-            function addInfoArray (idNum, name, desc, source, type) {
-                addEntry(idNum, idNumList);
-                addEntry(name, nameList);
-                addEntry(desc, descList);
-                addEntry(source, sourceList);
-                addEntry(type, typeList);
-
+                };
+            };
+            function addInfoArray (idNum, name, desc, source) {
+                addNewEntry(idNum, idNumList);
+                addNewEntry(name, nameList);
+                addNewEntry(desc, descList);
+                addNewEntry(source, sourceList);
             };
             function getInfoArray (idNum) {
                 name = getInfo(idnum, name);
                 desc = getInfo(idnum, desc);
                 source = getInfo(idnum, source);
-                type = getInfo(idnum, type);
-
             }
             function getInfo (idNum, list) {
-                return (list [idNum])
+                return (list[idNum])
             };
-            /*function addInfoPrompt (idNum, name, desc, source, type) {
+            
+            function addInfoPrompt (idNum, name, desc, source, type) {
                 var name = prompt("name"); var desc = prompt("description"); var source = prompt("iframe link"); var type = prompt("page type?");
-            };*/
+            };
+            function setupGameInfo (id) {
+                if (id === 0) {
+                addInfoArray(0, "Getting Over It", "In this take on a viral rage platformer, you traverse terrain with only your trusty hammer. Can you make it to the end?", "/games/gettingoveritscratch.html");
+                }
+                else if (id ===1) {
+                addInfoArray(1, "Terraria", "Through tedious work, terraria was made in Scratch, and now, its here for you to play. Build houses, fight slimes, and mine, its all up tou you.", "/games/terrariascratch.html");
+                }
+                
+            }
+            function redirect(setIdNum) {
+                idNum = setIdNum;
+                setupGameInfo(idNum)
+                if (confirm("Name is " + name + ", desc is " + desc + ", source is " + source + ", correct?") === true)  {
+                    window.location.href="/template.html";
+                }
+                else {
+                    alert("Sorry about that :(");
+                }
+                
+                }
+                */
         </script>
       <div id="all-contents">
         <nav>
             <header>CHS Unblocked</header>
-            <ul>
-                <li><a href="/CHSU/index.html">Home</a></li>
-                <li><a href="/CHSU/games.html">Games</a></li>
-                <li><a href="/CHSU/contact.html">Contact</a></li>
-            </ul>
+                 <ul class="portfolio">
+                    <li><a href="/index.html"> Home</a></li>
+                    <li><a href="/games.html">Games</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
         </nav>
         <main>
             <div class="content">
                 <h1>Games</h1>
                 <ul id="portfolio">
-                    <li onclick="addInfoArray()"><a href="template.html">Getting Over It Scratch</a></li>
-                    <li onclick="addInfoArray()"><a href="template.html">Getting Over It Scratch</a></li>
-                    <li onclick="addInfoArray()"><a href="template.html">Add game(testing)</a></li>                        
+                    <li><a href="/games/gettingoveritscratch.html">Getting Over It Scratch</a></li>
+                    <li><a href="/games/terrariascratch.html">Terraria Scratch</a></li>
+                    <li><a href="/template.html">Add game(testing)</a></li>                        
                 </ul>
             </div>
         </main>
